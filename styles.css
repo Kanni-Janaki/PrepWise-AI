@@ -1,0 +1,449 @@
+
+/* =========================================
+   INTERVIEW AI - PREMIUM PURPLE THEME
+========================================= */
+
+:root {
+    --primary: #7544e8;
+    --primary-dark: #5930c5;
+    --purple-light: #eee7ff;
+    --text-dark: #292044;
+    --text-muted: #77718b;
+    --white: #ffffff;
+}
+
+.stApp {
+    background:
+        radial-gradient(circle at 5% 5%, #eee7ff 0, transparent 30%),
+        radial-gradient(circle at 95% 35%, #e9f1ff 0, transparent 28%),
+        #faf9ff;
+    color: var(--text-dark);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.block-container {
+    max-width: 1100px;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+/* Hide default Streamlit decoration */
+
+#MainMenu,
+footer {
+    visibility: hidden;
+}
+
+header[data-testid="stHeader"] {
+    background: transparent;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 22px;
+    background: rgba(255,255,255,0.85);
+    border: 1px solid #eee8fb;
+    border-radius: 17px;
+    box-shadow: 0 5px 25px rgba(70, 45, 120, 0.06);
+}
+
+.brand {
+    font-size: 25px;
+    font-weight: 850;
+    color: #30204f;
+    letter-spacing: -1px;
+}
+
+.brand-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 39px;
+    margin-right: 9px;
+    border-radius: 12px;
+    color: white;
+    background: linear-gradient(135deg, #a16aff, #6337d5);
+}
+
+.brand-highlight {
+    color: #8654e9;
+}
+
+.header-tag {
+    padding: 9px 15px;
+    border-radius: 30px;
+    background: #eee7ff;
+    color: #7040d2;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 27px;
+    padding: 65px 20px;
+    border-radius: 24px;
+    background: linear-gradient(125deg, #7141dc, #9460ed, #b58bfa);
+    box-shadow: 0 15px 35px rgba(112, 65, 220, 0.20);
+}
+
+.hero-label {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 30px;
+    background: rgba(255,255,255,0.14);
+    color: white;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.hero-section h1 {
+    margin-top: 22px;
+    margin-bottom: 17px;
+    color: white;
+    font-size: clamp(38px, 6vw, 59px);
+    font-weight: 850;
+    line-height: 1.15;
+    letter-spacing: -2px;
+}
+
+.gradient-text {
+    color: #f4eaff;
+}
+
+.hero-section p {
+    max-width: 590px;
+    margin: auto;
+    color: #f5efff;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.section-heading {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.section-heading h3 {
+    color: #30204f;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.section-heading p {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* =========================================
+   INPUT FORM CARD
+========================================= */
+
+div[data-testid="stForm"] {
+    padding: 27px;
+    border: 1px solid #e9e1fa;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 10px 30px rgba(65, 42, 110, 0.08);
+}
+
+/* Input labels */
+
+.stTextArea label p {
+    color: #513779 !important;
+    font-size: 11px !important;
+    font-weight: 850 !important;
+    letter-spacing: 1px;
+}
+
+/* Text areas */
+
+.stTextArea textarea {
+    background: #fbfaff !important;
+    color: #292044 !important;
+    border: 1.5px solid #e6ddf8 !important;
+    border-radius: 13px !important;
+    padding: 15px !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    transition: all 0.2s ease;
+}
+
+.stTextArea textarea:focus {
+    border-color: #9364e9 !important;
+    background: white !important;
+    box-shadow: 0 0 0 3px #eee6ff !important;
+}
+
+.stTextArea textarea::placeholder {
+    color: #aaa3ba !important;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.stButton button,
+.stFormSubmitButton button {
+    min-height: 47px;
+    border-radius: 12px;
+    font-weight: 750;
+    transition: all 0.2s ease;
+}
+
+.stFormSubmitButton button[kind="primary"] {
+    background: linear-gradient(110deg, #7544e8, #9a64ef) !important;
+    border: none !important;
+    color: white !important;
+    box-shadow: 0 6px 15px rgba(117, 68, 232, 0.22);
+}
+
+.stFormSubmitButton button[kind="primary"]:hover {
+    background: linear-gradient(110deg, #6031cf, #8050df) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 9px 20px rgba(117, 68, 232, 0.28);
+}
+
+.stFormSubmitButton button[kind="secondary"] {
+    background: white !important;
+    color: #7045bd !important;
+    border: 1px solid #ded2f5 !important;
+}
+
+.stFormSubmitButton button[kind="secondary"]:hover {
+    background: #f4efff !important;
+    border-color: #a98be5 !important;
+}
+
+/* =========================================
+   FEEDBACK SECTION
+========================================= */
+
+.feedback-heading {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    padding: 25px 25px 20px;
+    border-radius: 18px;
+    background: linear-gradient(110deg, #f0e9ff, #f8f4ff);
+    border: 1px solid #e4d9fb;
+}
+
+.feedback-label {
+    color: #7544d8;
+    font-size: 11px;
+    font-weight: 850;
+    letter-spacing: 1.5px;
+}
+
+.feedback-heading h2 {
+    color: #30204f;
+    font-size: 29px;
+    font-weight: 850;
+    margin-top: 9px;
+}
+
+.feedback-heading p {
+    color: #77718b;
+    font-size: 14px;
+}
+
+/* Feedback card */
+
+.feedback-card {
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    border: 1px solid #e5dafb;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 6px 20px rgba(65, 42, 110, 0.06);
+}
+
+.feedback-card-title {
+    color: #7544d8;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/* Gemini answer content */
+
+div[data-testid="stMarkdownContainer"] {
+    line-height: 1.85;
+}
+
+div[data-testid="stMarkdownContainer"] h1,
+div[data-testid="stMarkdownContainer"] h2,
+div[data-testid="stMarkdownContainer"] h3 {
+    color: #6035b1;
+    font-weight: 800;
+    margin-top: 22px;
+}
+
+div[data-testid="stMarkdownContainer"] p,
+div[data-testid="stMarkdownContainer"] li {
+    color: #514a63;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+div[data-testid="stMarkdownContainer"] strong {
+    color: #38235f;
+}
+
+div[data-testid="stMarkdownContainer"] ul,
+div[data-testid="stMarkdownContainer"] ol {
+    padding-left: 25px;
+}
+
+/* =========================================
+   WARNING AND ERROR MESSAGES
+========================================= */
+
+div[data-testid="stAlert"] {
+    border-radius: 13px;
+}
+
+/* =========================================
+   BOTTOM MESSAGE
+========================================= */
+
+.bottom-note {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(110deg, #eee7ff, #f5edff);
+    color: #6840b2;
+    border: 1px solid #e4d8fb;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    border-top: 1px solid #e9e2f5;
+    margin-top: 55px;
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    color: #898298;
+    font-size: 12px;
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 650px) {
+    .hero-section {
+        padding: 45px 12px;
+    }
+
+    .hero-section h1 {
+        letter-spacing: -1px;
+    }
+
+    .header-tag {
+        font-size: 8px;
+        padding: 7px 9px;
+    }
+
+    .brand {
+        font-size: 21px;
+    }
+
+    div[data-testid="stForm"] {
+        padding: 16px;
+    }
+
+    .feedback-heading h2 {
+        font-size: 24px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ---------- PROFESSIONAL SCORE CARD ---------- */
+
+.score-card {
+    padding: 25px;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 19px;
+    background: linear-gradient(120deg, #6f3ed8, #a16af0);
+    box-shadow: 0 10px 25px rgba(111, 62, 216, 0.18);
+}
+
+.score-label {
+    color: #f1eaff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.score-number {
+    color: white;
+    font-size: 54px;
+    font-weight: 850;
+    line-height: 1.3;
+}
+
+.score-number span {
+    font-size: 19px;
+    font-weight: 600;
+    color: #eee3ff;
+}
+
+.score-description {
+    color: #f0e8ff;
+    font-size: 13px;
+}
+
+/* ---------- FEEDBACK CONTENT ---------- */
+
+div[data-testid="stMarkdownContainer"] h3 {
+    padding: 12px 15px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    border-left: 4px solid #8653e5;
+    border-radius: 5px;
+    background: #f0eaff;
+    color: #57329b;
+    font-size: 18px;
+}
+
+div[data-testid="stMarkdownContainer"] li {
+    margin-bottom: 7px;
+}
+
+div[data-testid="stMarkdownContainer"] p {
+    margin-bottom: 12px;
+}
